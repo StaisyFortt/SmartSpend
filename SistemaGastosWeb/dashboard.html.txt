@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SmartSpend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #f0f2f5; min-height: 100vh; }
+        .navbar { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05); border-bottom: 1px solid rgba(255,255,255,0.3); }
+        .card-custom { background: white; border: none; border-radius: 20px; box-shadow: 0 10px 40px -10px rgba(0,64,128,0.1); transition: transform 0.3s ease; overflow: hidden; position: relative; }
+        .card-custom:hover { transform: translateY(-5px); }
+        .card-decoration { position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(45deg, #23a6d5, #23d5ab); opacity: 0.2; }
+        .stat-value { font-size: 2.5rem; font-weight: 800; color: #2d3748; }
+        .stat-label { color: #718096; font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; }
+        .btn-action {
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: white; border-radius: 12px; padding: 10px; width: 100%; text-align: left;
+            transition: all 0.2s; display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 8px; text-decoration: none; cursor: pointer;
+        }
+        .btn-action:hover { background: rgba(255,255,255,0.2); transform: translateX(5px); }
+        .progress { border-radius: 10px; background-color: #edf2f7; height: 10px; }
+        .progress-bar { border-radius: 10px; transition: width 1s ease; }
+        .table-container { background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05); }
+        .badge-cat { background: #e6fffa; color: #23d5ab; padding: 8px 15px; border-radius: 30px; font-weight: 600; font-size: 0.85rem; }
+        .btn-float {
+            position: fixed; bottom: 30px; right: 30px;
+            background: linear-gradient(45deg, #e73c7e, #ee7752);
+            color: white; width: 65px; height: 65px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; box-shadow: 0 4px 20px rgba(231, 60, 126, 0.4);
+            border: none; transition: transform 0.2s; z-index: 1000;
+        }
+        .btn-float:hover { transform: scale(1.1) rotate(90deg); }
+        .modal-content { border-radius: 20px; border: none; }
+        .form-control, .form-select { border-radius: 10px; padding: 12px; background-color: #f8f9fa; border: 1px solid #e9ecef; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: #23a6d5; font-size: 1.5rem;">
+                <i class="fas fa-rocket me-2"></i>SmartSpend
+            </a>
+            <button class="btn btn-dark rounded-pill px-4" onclick="logout()">Cerrar Sesión</button>
+        </div>
+    </nav>
+
+    <div class="container py-4">
+        <div class="mb-5">
+            <h1 class="fw-bold" style="color: #1a202c;">Hola, <span style="color: #e73c7e;">bienvenido!</span> </h1>
+            <p class="text-muted">Resumen de tus finanzas.</p>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card-custom p-4 h-100">
+                    <div class="card-decoration"></div>
+                    <p class="stat-label mb-2">Movimientos</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <h2 class="stat-value me-3" id="totalCount">0</h2>
+                        <i class="fas fa-receipt fa-2x text-muted opacity-25"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-custom p-4 h-100">
+                    <div class="card-decoration" style="background: linear-gradient(45deg, #ee7752, #e73c7e);"></div>
+                    <p class="stat-label mb-2">Gasto Total</p>
+                    <div class="d-flex align-items-center mt-3">
+                        <h2 class="stat-value me-3" id="totalAmount">$0.00</h2>
+                        <i class="fas fa-wallet fa-2x text-muted opacity-25"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card-custom p-4 bg-dark text-white h-100">
+                    <p class="stat-label text-white-50 mb-3">Acciones Rápidas</p>
+                    
+                    <div onclick="exportar()" class="btn-action">
+                        <span><i class="fas fa-download me-2"></i> Descargar Reporte</span>
+                        <i class="fas fa-chevron-right small"></i>
+                    </div>
+
+                    <div onclick="document.getElementById('inputImportar').click()" class="btn-action">
+                        <span><i class="fas fa-file-upload me-2"></i> Importar CSV</span>
+                        <i class="fas fa-chevron-right small"></i>
+                    </div>
+                    <input type="file" id="inputImportar" accept=".csv" style="display: none;" onchange="subirArchivo(this)">
+
+                    <div data-bs-toggle="modal" data-bs-target="#modalPresupuesto" class="btn-action">
+                        <span><i class="fas fa-chart-line me-2"></i> Definir Presupuesto</span>
+                        <i class="fas fa-plus small"></i>
+                    </div>
+                    
+                    <div data-bs-toggle="modal" data-bs-target="#modalCategoria" class="btn-action">
+                        <span><i class="fas fa-tag me-2"></i> Nueva Categoría</span>
+                        <i class="fas fa-plus small"></i>
+                    </div>
+
+                    <div data-bs-toggle="modal" data-bs-target="#modalMetodo" class="btn-action mb-0">
+                        <span><i class="fas fa-credit-card me-2"></i> Nuevo Método</span>
+                        <i class="fas fa-plus small"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="card-custom p-4 mb-4">
+                    <h5 class="fw-bold mb-4">Gasto por Categoría</h5>
+                    <div style="position: relative; height: 200px;">
+                         <canvas id="gastosChart"></canvas>
+                    </div>
+                </div>
+                <div class="card-custom p-4">
+                    <h5 class="fw-bold mb-3">Estado de Presupuestos</h5>
+                    <div id="listaPresupuestos">
+                        <p class="text-muted small">Cargando alertas...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="table-container h-100">
+                    <h5 class="fw-bold mb-4">Últimas Transacciones</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Concepto</th>
+                                    <th>Categoría</th>
+                                    <th class="text-end">Monto</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaGastos"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn-float" data-bs-toggle="modal" data-bs-target="#modalGasto">
+        <i class="fas fa-plus"></i>
+    </button>
+
+    <div class="modal fade" id="modalGasto" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Nuevo Gasto</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <form id="formGasto">
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Descripción</label><input type="text" class="form-control" id="txtDescripcion" placeholder="Ej: Pizza" required></div>
+                        <div class="row mb-3">
+                            <div class="col-6"><label class="form-label small text-muted fw-bold">Monto</label><input type="number" class="form-control" id="txtMonto" placeholder="0.00" step="0.01" required></div>
+                            <div class="col-6"><label class="form-label small text-muted fw-bold">Fecha</label><input type="datetime-local" class="form-control" id="txtFecha" required></div>
+                        </div>
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Categoría</label><select class="form-select" id="selCategoria" required><option value="">Cargando...</option></select></div>
+                        <div class="mb-4"><label class="form-label small text-muted fw-bold">Método</label><select class="form-select" id="selMetodo" required><option value="">Cargando...</option></select></div>
+                        <div class="d-grid"><button type="submit" class="btn btn-primary py-2 fw-bold" style="background: #e73c7e; border:none;">Guardar</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCategoria" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Nueva Categoría</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <form id="formCategoria">
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Nombre</label><input type="text" class="form-control" id="txtNombreCat" required></div>
+                        <div class="d-grid"><button type="submit" class="btn btn-success py-2 fw-bold" style="background: #23d5ab; border:none;">Crear</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMetodo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Nuevo Método</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <form id="formMetodo">
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Nombre</label><input type="text" class="form-control" id="txtNombreMet" required></div>
+                        <div class="d-grid"><button type="submit" class="btn btn-info py-2 fw-bold text-white" style="background: #23a6d5; border:none;">Crear</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPresupuesto" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header"><h5 class="modal-title fw-bold">Definir Límite</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body">
+                    <form id="formPresupuesto">
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Categoría</label><select class="form-select" id="selCategoriaPresup" required><option value="">Cargando...</option></select></div>
+                        <div class="mb-3"><label class="form-label small text-muted fw-bold">Límite Mensual ($)</label><input type="number" class="form-control" id="txtMontoPresup" required></div>
+                        <div class="d-grid"><button type="submit" class="btn btn-warning py-2 fw-bold text-white" style="background: #f6c23e; border:none;">Guardar</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = "https://localhost:7031/api"; // TU PUERTO
+
+        const token = localStorage.getItem('token');
+        if (!token) window.location.href = 'index.html';
+
+        let chartInstance = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const now = new Date();
+            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+            document.getElementById('txtFecha').value = now.toISOString().slice(0, 16);
+            cargarDatosDashboard();
+            cargarPresupuestos();
+            cargarListasDesplegables();
+        });
+
+        async function cargarDatosDashboard() {
+            try {
+                const response = await fetch(`${API_URL}/Gastos`, { headers: { 'Authorization': `Bearer ${token}` } });
+                if (response.status === 401) throw new Error("Unauthorized");
+                const gastos = await response.json();
+
+                document.getElementById('totalCount').innerText = gastos.length;
+                const total = gastos.reduce((sum, g) => sum + g.monto, 0);
+                document.getElementById('totalAmount').innerText = `$${total.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+                actualizarTablaYGrafica(gastos);
+            } catch (error) { if(error.message === "Unauthorized") logout(); }
+        }
+
+        async function cargarPresupuestos() {
+            try {
+                const date = new Date();
+                const anio = date.getFullYear();
+                const mes = date.getMonth() + 1;
+                const response = await fetch(`${API_URL}/Presupuestos/reporte?anio=${anio}&mes=${mes}`, { headers: { 'Authorization': `Bearer ${token}` } });
+                if (!response.ok) return;
+                const reporte = await response.json();
+                
+                const container = document.getElementById('listaPresupuestos');
+                container.innerHTML = '';
+                if (reporte.length === 0) container.innerHTML = '<p class="text-muted small">No hay límites definidos.</p>';
+
+                reporte.forEach(item => {
+                    let colorClass = 'bg-success';
+                    if (item.colorAlerta === 'Amarillo') colorClass = 'bg-warning';
+                    if (item.colorAlerta === 'Naranja') colorClass = 'bg-warning';
+                    if (item.colorAlerta === 'Rojo') colorClass = 'bg-danger';
+                    let ancho = item.porcentajeConsumido > 100 ? 100 : item.porcentajeConsumido;
+
+                    container.innerHTML += `
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span class="fw-bold text-dark">${item.categoria}</span><span class="text-muted">$${item.totalGastado} / $${item.limitePresupuesto}</span></div>
+                            <div class="progress" style="height: 8px;"><div class="progress-bar ${colorClass}" style="width: ${ancho}%"></div></div>
+                            <small class="${colorClass.replace('bg-', 'text-')} fw-bold" style="font-size: 0.7rem;">${item.mensajeAlerta} (${item.porcentajeConsumido}%)</small>
+                        </div>`;
+                });
+            } catch (error) { console.error(error); }
+        }
+
+        function actualizarTablaYGrafica(gastos) {
+            const tbody = document.getElementById('tablaGastos');
+            tbody.innerHTML = '';
+            const categoriasMap = {};
+
+            gastos.forEach(g => {
+                tbody.innerHTML += `<tr><td class="text-muted small">${new Date(g.fecha).toLocaleDateString()}</td><td class="fw-bold text-dark">${g.descripcion}</td><td><span class="badge-cat">${g.categoria}</span></td><td class="text-end fw-bold text-dark">$${g.monto.toFixed(2)}</td></tr>`;
+                if (categoriasMap[g.categoria]) categoriasMap[g.categoria] += g.monto; else categoriasMap[g.categoria] = g.monto;
+            });
+
+            const ctx = document.getElementById('gastosChart').getContext('2d');
+            if (chartInstance) chartInstance.destroy();
+            chartInstance = new Chart(ctx, {
+                type: 'doughnut',
+                data: { labels: Object.keys(categoriasMap), datasets: [{ data: Object.values(categoriasMap), backgroundColor: ['#23a6d5', '#e73c7e', '#23d5ab', '#ee7752', '#6f42c1'], borderWidth: 0 }] },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { usePointStyle: true } } } }
+            });
+        }
+
+        async function cargarListasDesplegables() {
+            try {
+                const [resCat, resMet] = await Promise.all([fetch(`${API_URL}/Categorias`, { headers: { 'Authorization': `Bearer ${token}` } }), fetch(`${API_URL}/MetodosPago`, { headers: { 'Authorization': `Bearer ${token}` } })]);
+                const cats = await resCat.json(); const mets = await resMet.json();
+                const selCat = document.getElementById('selCategoria'); const selMet = document.getElementById('selMetodo'); const selPre = document.getElementById('selCategoriaPresup');
+                selCat.innerHTML = ''; selMet.innerHTML = ''; selPre.innerHTML = '';
+                cats.forEach(c => { const opt = `<option value="${c.id}">${c.nombre}</option>`; selCat.innerHTML += opt; selPre.innerHTML += opt; });
+                mets.forEach(m => selMet.innerHTML += `<option value="${m.id}">${m.nombre}</option>`);
+            } catch (error) { console.error(error); }
+        }
+
+        // --- MANEJO DE ENVIO
+        document.getElementById('formGasto').addEventListener('submit', async (e) => { e.preventDefault(); const d = { descripcion: document.getElementById('txtDescripcion').value, monto: parseFloat(document.getElementById('txtMonto').value), fecha: document.getElementById('txtFecha').value, categoriaId: parseInt(document.getElementById('selCategoria').value), metodoPagoId: parseInt(document.getElementById('selMetodo').value) }; await enviarDatos(`${API_URL}/Gastos`, d, 'modalGasto', true); });
+        document.getElementById('formCategoria').addEventListener('submit', async (e) => { e.preventDefault(); await enviarDatos(`${API_URL}/Categorias`, { nombre: document.getElementById('txtNombreCat').value }, 'modalCategoria', false); cargarListasDesplegables(); document.getElementById('txtNombreCat').value = ''; });
+        document.getElementById('formMetodo').addEventListener('submit', async (e) => { e.preventDefault(); await enviarDatos(`${API_URL}/MetodosPago`, { nombre: document.getElementById('txtNombreMet').value, icono: "fas fa-wallet" }, 'modalMetodo', false); cargarListasDesplegables(); document.getElementById('txtNombreMet').value = ''; });
+        document.getElementById('formPresupuesto').addEventListener('submit', async (e) => { e.preventDefault(); const date = new Date(); await enviarDatos(`${API_URL}/Presupuestos`, { categoriaId: parseInt(document.getElementById('selCategoriaPresup').value), montoMaximo: parseFloat(document.getElementById('txtMontoPresup').value), anio: date.getFullYear(), mes: date.getMonth() + 1 }, 'modalPresupuesto', true); });
+
+        async function enviarDatos(url, data, modalId, recargar) {
+            try {
+                const response = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` }, body: JSON.stringify(data) });
+                if (response.ok) {
+                    bootstrap.Modal.getInstance(document.getElementById(modalId)).hide();
+                    if (recargar) { document.getElementById('formGasto').reset(); cargarDatosDashboard(); cargarPresupuestos(); }
+                    alert("¡Guardado exitosamente!");
+                } else { const err = await response.json(); console.log(err); alert("Error: " + (err.error || JSON.stringify(err))); }
+            } catch (error) { alert("Error de conexión"); }
+        }
+
+        async function subirArchivo(input) {
+            if (!input.files || input.files.length === 0) return;
+            const formData = new FormData(); formData.append('archivo', input.files[0]);
+            try {
+                alert("Subiendo archivo...");
+                const response = await fetch(`${API_URL}/Gastos/importar`, { method: 'POST', headers: { 'Authorization': `Bearer ${token}` }, body: formData });
+                const res = await response.json();
+                if (response.ok) { alert(res.mensaje); cargarDatosDashboard(); } else { alert("Error: " + (res.error || "Fallo en la importación")); }
+            } catch (error) { console.error(error); alert("Error de conexión"); }
+            input.value = '';
+        }
+
+        function logout() { localStorage.removeItem('token'); window.location.href = 'index.html'; }
+        
+        async function exportar() {
+            try {
+                const response = await fetch(`${API_URL}/Gastos/exportar`, { method: 'GET', headers: { 'Authorization': `Bearer ${token}` } });
+                if (response.ok) { const blob = await response.blob(); const url = window.URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = "MisGastos.csv"; document.body.appendChild(a); a.click(); a.remove(); window.URL.revokeObjectURL(url); } else { alert("Error descarga"); }
+            } catch (error) { alert("Error conexión"); }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

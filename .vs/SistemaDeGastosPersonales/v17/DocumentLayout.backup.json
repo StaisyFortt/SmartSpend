@@ -1,0 +1,313 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|solutionrelative:sistemadegastospersonales.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.infrastructure\\migrations\\20251207190852_corregirnombreanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|solutionrelative:sistemadegastospersonales.infrastructure\\migrations\\20251207190852_corregirnombreanio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.api\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|solutionrelative:sistemadegastospersonales.api\\controllers\\gastoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.infrastructure\\sistemadegastospersonales.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|solutionrelative:sistemadegastospersonales.infrastructure\\sistemadegastospersonales.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.api\\controllers\\presupuestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|solutionrelative:sistemadegastospersonales.api\\controllers\\presupuestoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{72B9C3C8-B4B8-4959-9C1C-C2C54518DACC}|SistemaDeGastosPersonales.Domain\\SistemaDeGastosPersonales.Domain.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.domain\\entidades\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{72B9C3C8-B4B8-4959-9C1C-C2C54518DACC}|SistemaDeGastosPersonales.Domain\\SistemaDeGastosPersonales.Domain.csproj|solutionrelative:sistemadegastospersonales.domain\\entidades\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\dtos\\reportepresupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\dtos\\reportepresupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|solutionrelative:sistemadegastospersonales.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA7FF0FB-C8C1-4673-A6BF-FD7D036DA6DE}|SistemaDeGastosPersonales.API\\SistemaDeGastosPersonales.API.csproj|solutionrelative:sistemadegastospersonales.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\dtos\\gastodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\dtos\\gastodetalledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\services\\gastoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\services\\gastoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\interfaces\\igastoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\interfaces\\igastoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.infrastructure\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|solutionrelative:sistemadegastospersonales.infrastructure\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.infrastructure\\persistencia\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{520CC2EE-2AA0-40D8-8782-FD8DEEA93302}|SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj|solutionrelative:sistemadegastospersonales.infrastructure\\persistencia\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\dtos\\presupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\dtos\\presupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|c:\\users\\wanda\\source\\repos\\sistemadegastospersonales\\sistemadegastospersonales.application\\interfaces\\ipresupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E354574-D142-4A2E-9A50-98267CEA27C7}|SistemaDeGastosPersonales.Application\\SistemaDeGastosPersonales.Application.csproj|solutionrelative:sistemadegastospersonales.application\\interfaces\\ipresupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T00:54:50.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\Services\\CategoriaService.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\CategoriaService.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\Services\\CategoriaService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T22:08:32.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\appsettings.json",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\appsettings.json",
+              "RelativeToolTip": "SistemaDeGastosPersonales.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-09T02:42:51.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20251207190852_CorregirNombreAnio.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Migrations\\20251207190852_CorregirNombreAnio.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Infrastructure\\Migrations\\20251207190852_CorregirNombreAnio.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Migrations\\20251207190852_CorregirNombreAnio.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Infrastructure\\Migrations\\20251207190852_CorregirNombreAnio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T19:08:53.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReportePresupuestoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\ReportePresupuestoDto.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\DTOs\\ReportePresupuestoDto.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\ReportePresupuestoDto.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\DTOs\\ReportePresupuestoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:20:24.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PresupuestosController.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\PresupuestosController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.API\\Controllers\\PresupuestosController.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\PresupuestosController.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.API\\Controllers\\PresupuestosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T15:07:47.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Presupuesto.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Domain\\Entidades\\Presupuesto.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Domain\\Entidades\\Presupuesto.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Domain\\Entidades\\Presupuesto.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Domain\\Entidades\\Presupuesto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:38:48.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PresupuestoService.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\PresupuestoService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\Services\\PresupuestoService.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\PresupuestoService.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\Services\\PresupuestoService.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAACEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:34:33.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IPresupuestoService.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Interfaces\\IPresupuestoService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\Interfaces\\IPresupuestoService.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Interfaces\\IPresupuestoService.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\Interfaces\\IPresupuestoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:32:59.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PresupuestoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\PresupuestoDto.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\DTOs\\PresupuestoDto.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\PresupuestoDto.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\DTOs\\PresupuestoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T14:30:42.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Persistencia\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Infrastructure\\Persistencia\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Persistencia\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Infrastructure\\Persistencia\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T13:50:19.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Infrastructure\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T13:50:02.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SistemaDeGastosPersonales.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Infrastructure\\SistemaDeGastosPersonales.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-07T13:48:51.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GastoDetalleDto.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\GastoDetalleDto.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\DTOs\\GastoDetalleDto.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\DTOs\\GastoDetalleDto.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\DTOs\\GastoDetalleDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T04:18:25.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GastosController.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\GastosController.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.API\\Controllers\\GastosController.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Controllers\\GastosController.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.API\\Controllers\\GastosController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAADwAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T04:05:37.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.API\\Program.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.API\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T04:04:50.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GastoService.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\GastoService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\Services\\GastoService.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Services\\GastoService.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\Services\\GastoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:59:18.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IGastoService.cs",
+              "DocumentMoniker": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Interfaces\\IGastoService.cs",
+              "RelativeDocumentMoniker": "SistemaDeGastosPersonales.Application\\Interfaces\\IGastoService.cs",
+              "ToolTip": "C:\\Users\\Wanda\\source\\repos\\SistemaDeGastosPersonales\\SistemaDeGastosPersonales.Application\\Interfaces\\IGastoService.cs",
+              "RelativeToolTip": "SistemaDeGastosPersonales.Application\\Interfaces\\IGastoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T03:57:29.544Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

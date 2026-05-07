@@ -1,0 +1,11 @@
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.AssemblyInfoInputs.cache
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.AssemblyInfo.cs
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\bin\Debug\net8.0\SistemaDeGastosPersonales.Domain.deps.json
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\bin\Debug\net8.0\SistemaDeGastosPersonales.Domain.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\bin\Debug\net8.0\SistemaDeGastosPersonales.Domain.pdb
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\refint\SistemaDeGastosPersonales.Domain.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\SistemaDeGastosPersonales.Domain.pdb
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Domain\obj\Debug\net8.0\ref\SistemaDeGastosPersonales.Domain.dll

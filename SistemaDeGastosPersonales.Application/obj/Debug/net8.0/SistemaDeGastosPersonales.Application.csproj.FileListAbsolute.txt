@@ -1,0 +1,15 @@
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.AssemblyInfoInputs.cache
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.AssemblyInfo.cs
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.csproj.CoreCompileInputs.cache
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\bin\Debug\net8.0\SistemaDeGastosPersonales.Application.deps.json
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\bin\Debug\net8.0\SistemaDeGastosPersonales.Application.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\bin\Debug\net8.0\SistemaDeGastosPersonales.Application.pdb
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\bin\Debug\net8.0\SistemaDeGastosPersonales.Domain.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\bin\Debug\net8.0\SistemaDeGastosPersonales.Domain.pdb
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.csproj.AssemblyReference.cache
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaD.1B0925EB.Up2Date
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\refint\SistemaDeGastosPersonales.Application.dll
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\SistemaDeGastosPersonales.Application.pdb
+C:\Users\Wanda\source\repos\SistemaDeGastosPersonales\SistemaDeGastosPersonales.Application\obj\Debug\net8.0\ref\SistemaDeGastosPersonales.Application.dll
