@@ -21,14 +21,14 @@ namespace SistemaDeGastosPersonales.Domain.Entidades
         public int Mes { get; set; }
 
         [Required]
-        public decimal MontoMaximo { get; set; } // el limite de dinero
+        public decimal MontoMaximo { get; set; }
 
         // relacion: un presupuesto pertenece a una categoria especifica
         public int CategoriaId { get; set; }
         [ForeignKey("CategoriaId")]
         public virtual Categoria Categoria { get; set; }
 
-        // opcional... usuarioId para facilitar consultas
+        // usuarioId para facilitar consultas
         public int UsuarioId { get; set; }
         public virtual Usuario Usuario { get; set; }
     }

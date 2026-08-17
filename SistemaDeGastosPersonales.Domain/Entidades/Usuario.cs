@@ -22,9 +22,8 @@ namespace SistemaDeGastosPersonales.Domain.Entidades
         public string Email { get; set; }
 
         [Required]
-        public string PasswordHash { get; set; } // aqui va el Hash, no la clave real
+        public string PasswordHash { get; set; }
 
-        // relaciones
         public virtual ICollection<Gasto> Gastos { get; set; }
         public virtual ICollection<Categoria> Categorias { get; set; }
         public virtual ICollection<MetodoPago> MetodosPago { get; set; }
