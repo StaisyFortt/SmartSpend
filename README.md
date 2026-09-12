@@ -1,10 +1,6 @@
 # SmartSpend - Sistema de Gestión de Gastos Personales
 
-<<<<<<< HEAD
 SmartSpend es una aplicación web desarrollada en C# con .NET 8 para el control de finanzas personales. Permite registrar transacciones diarias, categorizar gastos, definir límites presupuestarios mensuales con alertas visuales en tiempo real y exportar/importar datos en formato CSV.
-=======
-SmartSpend es una aplicación web desarrollada en .NET 8 y JavaScript para el control de finanzas personales. Permite registrar transacciones diarias, categorizar gastos, definir límites presupuestarios mensuales con alertas visuales en tiempo real y exportar/importar datos en formato CSV.
->>>>>>> 081f9e009ebd022d6366ab1d70992bfbdbea6b0e
 
 El proyecto está diseñado bajo una arquitectura limpia en capas (Clean Architecture) e incluye una suite de pruebas automatizadas que abarca pruebas unitarias en el backend y pruebas End-to-End (E2E) sobre la interfaz de usuario con Selenium WebDriver.
 
